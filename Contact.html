@@ -29,6 +29,9 @@
                 <li class="nav-item active">
                         <a class="nav-link" href="./Contact.html"><i class="fa fa-contao fa-lg"></i> Contact Us <span class="sr-only">(current)</span></a>
                       </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="./project.html"><i class="fa fa-product-hunt fa-lg"></i> ProjectsPage </a>
+                        </li>
                   </div>
                 </li>            
               </ul>          
@@ -57,7 +60,7 @@
                             <p id="cityError" class="errorMsg"></p>
     
                             <label for="province">Province:</label>
-                            <select id="province" name="province" required="required" onchange="validateProvince()">
+                            <select id="province" name="province" class="btn btn-danger" required="required" onchange="validateProvince()">
                                 <option value=""></option>
                                 <option value="QC">QC</option>
                                 <option value="ON">ON</option>
@@ -87,8 +90,8 @@
                             <p id="emailError" class="errorMsg"></p>
                         </fieldset>
     
-                        <input type="submit" id="createBtn" value="Register Now" onclick="validateForm()" />
-                        <input type="button" id="reset" value="Clear Form" onclick="reload()" />
+                        <input type="submit" class="btn btn-primary" id="createBtn" value="Register Now" onclick="validateForm()" />
+                        <input type="button" class="btn btn-primary" id="reset" value="Clear Form" onclick="reload()" />
                     </form>
                     <blockquote>Thank you! We pay attention to your feedback!</blockquote>
             </article>
