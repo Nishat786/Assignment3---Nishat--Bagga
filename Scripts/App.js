@@ -28,12 +28,6 @@
 
     }
 
-    function AboutContent() {
-        let Paragraph = document.getElementById("Paragraph");
-
-        Paragraph.textContent = "We will be Changing the Contents of this Page.";
-    }
-
     function footer() {
         let footer = document.getElementById("footer");
 
@@ -44,6 +38,17 @@
 
         sample.textContent = "Hi, My name is Nishat Bagga , I born and brought up in Jalandhar, Punjab, India on 17 Sep 1998. I am very Passionate about my physic and sports. I am very Hard, tough and hot-headed person. I am very loyable and to my friends and family and the person who did good to me at any time and I can do anything for them..";
     }
+    function heading3() {
+        let heading3 = document.getElementById("heading3");
+
+        heading3.textContent = "Mission Statement";
+    }
+    function heading4() {
+        let heading4 = document.getElementById("heading4");
+
+        heading4.textContent = "My Hobbies: ";
+    }
+
 
     function Start() {
         // local variable
@@ -56,11 +61,14 @@
                 break;
 
                 case "My Webpage - About!":
-                AboutContent();
                 sample();
+                heading3();
+                heading4();
+                footer();
                 break;
 
-                case "Contact Us":
+                case "My Webpage - Contact":
+                footer();
                 break;
 
                 default:
