@@ -34,6 +34,17 @@
         Paragraph.textContent = "We will be Changing the Contents of this Page.";
     }
 
+    function footer() {
+        let footer = document.getElementById("footer");
+
+        footer.textContent = "copyright - @BAGGANISHAT - Assignment2-Updated_page";
+    }
+    function sample() {
+        let sample = document.getElementById("sample");
+
+        sample.textContent = "Hi, My name is Nishat Bagga , I born and brought up in Jalandhar, Punjab, India on 17 Sep 1998. I am very Passionate about my physic and sports. I am very Hard, tough and hot-headed person. I am very loyable and to my friends and family and the person who did good to me at any time and I can do anything for them..";
+    }
+
     function Start() {
         // local variable
         let title = document.title;
@@ -41,10 +52,12 @@
         switch(title) {
             case "My Webpage - Home!":            
                 HomeContent();
+                footer();
                 break;
 
                 case "My Webpage - About!":
                 AboutContent();
+                sample();
                 break;
 
                 case "Contact Us":
